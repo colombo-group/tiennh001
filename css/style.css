@@ -14,19 +14,28 @@ body{
 	font-family: arial;
 }
 
+.center {
+    width: 1000px;
+    margin: auto;
+}
+
 div#layout {
 	margin: 0px auto;
 	width: 100%;
+	min-width: 1000px;
 	background-color: #f2f2f2;
 }
 
 div#header {
+	width: 100%;
+	height: 30px;
 	background: url(../images/header.jpg) repeat-x;
+	min-width: 1000px;
 }
 
 div.hLeft {
+	height: 30px;
 	float: left;
-	margin-left: 150px;
 }
 
 div.hLeft ul li {
@@ -43,16 +52,16 @@ div.hLeft ul li.last {
 
 div.hLeft ul li a {
 	text-decoration: none;
-	color: 4fa7f1;
+	color: #4fa7f1;
 }
 
 div.hLeft ul li a:hover{
-	color: blue;
+	color: #ffffff;
 }
 
 div.hRight {
+	height: 30px;
 	float: right;
-	margin-right: 150px; 
 }
 
 div.hRight ul li{
@@ -63,18 +72,12 @@ div.hRight ul li{
 	color: #5eb1fa;
 }
 
-
+div.hRight ul li img {
+	height: 9px;
+	padding-bottom: 2px;
+}
 div.hRight ul li.second {
 	border-right: none;
-}
-
-div#header {
-	height: 30px;
-	overflow: auto;
-}
-
-div.hLeft {
-	height: 100%;
 }
 
 div.hLeft ul {
@@ -85,92 +88,86 @@ div.hRight ul {
 	margin-top: 5px;
 }
 
-div.hRight {
-	height: 100%;
+div#menu {
+	background-color: #ffffff;
+	width: 100%;
+	height: 100px;
+	min-width: 1000px;
 }
 
-div#gnavTop {
-	background-color: #ffffff;
+div.mLeft {
+	float: left;
 	height: 100px;
 }
 
-div.gNavTop1 {
-	float: left;
-	margin-left: 150px;
-}
-
-div.gNavTop2 {
+div.mRight {
 	float: right;
-	margin-right: 150px;
+	height: 100px;
 }
 
-div.gNavTop2 ul li {
+div.mRight ul li {
 	display: inline;
 	padding: 17px;
 	font-size: 14px;
 }
 
-div.gNavTop2 ul li a {
+div.mRight ul li a {
 	text-decoration: none;
 	color: #272727;
 }
 
-div.gNavTop2 ul li a:hover {
+div.mRight ul li a:hover {
 	color: blue;
 }
 
-div.gNavTop2 ul li a.currentPage {
-	color: blue;
+div.mRight ul li a img {
+	height: 13px;
+	padding-bottom: 4px;
 }
 
-div#gNavTop {
-	overflow: auto;
-}
-
-div.gNavTop2 ul {
+div.mRight ul {
 	margin-top: 35px;
 }
 
-div#gNavBot {
+div#banner {
 	background: url(../images/gNavBot.jpg);
 	background-repeat: no-repeat;
+	background-size: 100%;
 	height: 90px;
-	clear: both;
+	width: 100%;
+	min-width: 1000px;
 }
 
-div.gNavBot1 {
+div.bLeft{
 	float: left;
-	margin-left: 150px;
 	margin-top: 25px;
 } 
 
-div.gNavBot1 p{
+div.bLeft p{
 	color: #ffffff;
 	font-size: 22px;
 }
 
-div.gNavBot2 {
+div.bRight {
 	float: right;
-	margin-right: 150px;
-	height: 100%;
 	margin-top: 35px;
+	color: #ffffff;
 }
 
-div.gNavBot2 a {
+div.bRight a {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 12px;
 }
 
-div.gNavBot2 a:hover {
+div.bRight a:hover {
 	color: blue;
 }
 
 div#pageBody {
-	clear: both;
-	margin-left: 150px;
-	margin-right: 150px;
-	margin-top: 10px;
+	width: 1000px;
+	margin: auto;
+	margin-top: 20px;
 }
 
 div#content {
@@ -206,6 +203,11 @@ div.tbLeft ul li {
 	font-size: 12px;
 }
 
+div.tbLeft ul li img {
+	height: 13px;
+	padding-bottom: 3px;
+}
+
 div.tbLeft ul li.date {
 	color: #b9b9b9;
 }
@@ -233,7 +235,7 @@ div#linklist {
 
 div#linklist a {
 	text-decoration: none;
-	color: #blue;
+	color: blue;
 }
 
 div#linklist a:hover {
@@ -243,6 +245,7 @@ div#linklist a:hover {
 div#mainContent p {
 	padding-bottom: 25px;
 	font-size: 13px;
+	text-align: justify;
 }
 
 div#mainContent p.first {
@@ -253,7 +256,7 @@ div#footer {
 	clear: both;
 }
 
-div#note {
+div#mainContent div#note p{
 	text-align: right;
 	color: #cdcdcd;
 	border-bottom: dotted 1px #d7d7d7;
@@ -263,7 +266,11 @@ div#note {
 div#lastTb ul li{
 	display: inline;
 	padding-right: 10px;
-	font-size: 12px;
+	font-size: 16px;
+}
+
+div#lastTb ul li img {
+	padding-bottom: 4px;
 }
 
 div#lastTb {
@@ -274,6 +281,11 @@ div#lastNote ul li{
 	display: inline;
 	font-size: 12px;
 	padding-right: 10px;
+}
+
+div#lastNote ul li img {
+	height: 15px;
+	padding-bottom: 3px;
 }
 
 div.sidebarLeft {
@@ -290,8 +302,8 @@ div.sidebarContent {
 }
 
 div#sidebar  div.sidebarContent {
-	margin-top: 20px;
-	padding-bottom: 20px;
+	margin-top: 15px;
+	padding-bottom: 15px;
 	border-bottom: dotted 1px #cdcdcd;
 	overflow: auto;
 }
@@ -330,13 +342,12 @@ div#ftTop {
 }
 
 div#ftTop ul {
-	padding-left: 150px;
-	padding-top: 30px;
+	padding: 30px;
 }
 
 div#ftTop ul li{
 	display: inline;
-	padding-right: 50px;
+	padding-right: 25px;
 }
 
 div#ftMid {
@@ -346,9 +357,9 @@ div#ftMid {
 
 div#ftBot {
 	background-color: #0f75bc;
-	height: 200px;
-	padding-left: 150px;
+	height: 150px;
 	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 div.ftLeft {
@@ -372,6 +383,11 @@ div#ftContact1 ul li {
 	padding: 0 15px; 
 }
 
+div#ftContact1 ul li img {
+	height: 9px;
+	padding-bottom: 2px;
+}
+
 div#ftContact1 ul li.last {
 	border: none;
 }
@@ -383,4 +399,9 @@ div#ftContact1 {
 div#ftContact2 ul li {
 	display: inline;
 	padding-right: 15px;
+}
+
+div.ftRight img{
+	height: 170px;
+	width: 295px;
 }
